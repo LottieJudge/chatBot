@@ -5,3 +5,11 @@ Safety within chatbot's:
 - Chatbot's, such as Alexa and Siri, are given feminine voices because of societal and historical gender roles. These kind fo chatbot's are virtual assistants, roles that women have typically filled in the past. 
 
 - Chatbot's learn from their input, so if they're being give lots of problematic data that is sexist, racist etc the chatbot will pick that up and run with it. We can counteract this by supervising the chatbot's learning and also by giving it rules to ignore common slurs etc. 
+
+Lambda Functions
+
+Lambda functions, or anonymous functions, are small inline functions that can have any number of arguments but only one expression. They are defined using the Lambda keyword e.g:
+
+Original function: 
+
+  def square(x):
