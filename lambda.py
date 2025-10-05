@@ -3,6 +3,7 @@
 def square(x):
   return x**2
 
+# Lambda function
 square_l = lambda x: x ** 2
 
 print(square(4))
