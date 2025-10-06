@@ -18,3 +18,8 @@ print(list(map(lambda x: x + 1, nums)))
 # interesting!! Love map - why the heck haven't i been using this?
 squared = list(map( lambda x: x**2, nums))
 print(squared)
+
+# with filter 
+odds = list(filter(lambda x: x % 2 != 0, nums))
+evens = list(filter(lambda x: x % 2 == 0, nums ))
+print(odds, evens)
