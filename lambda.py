@@ -23,3 +23,14 @@ print(squared)
 odds = list(filter(lambda x: x % 2 != 0, nums))
 evens = list(filter(lambda x: x % 2 == 0, nums ))
 print(odds, evens)
+
+# sorted 
+
+dict = [('Scott', 36), ('Chewie', 7),  ('Lottie', 32),  ('Watson', 9)]
+
+by_age = sorted(dict, key=lambda x: x[1])
+print(by_age)
+
+# best practice. 
+#  Use Lambda functions when you want a simple function for a short amount of time
+# You're passing a simple function as the argument of a highr order function
