@@ -26,4 +26,7 @@ print(odds, evens)
 
 # sorted 
 
-dict = [('Chewie', 7), ('Watson', 9), ('Lottie', 32), ()]
+dict = [('Scott', 36), ('Chewie', 7),  ('Lottie', 32),  ('Watson', 9)]
+
+by_age = sorted(dict, key=lambda x: x[1])
+print(by_age)
