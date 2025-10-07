@@ -23,3 +23,7 @@ print(squared)
 odds = list(filter(lambda x: x % 2 != 0, nums))
 evens = list(filter(lambda x: x % 2 == 0, nums ))
 print(odds, evens)
+
+# sorted 
+
+dict = [('Chewie', 7), ('Watson', 9), ('Lottie', 32), ()]
