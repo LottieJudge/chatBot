@@ -15,3 +15,5 @@ def squared(x):
 
 sqd = map(squared, nums)
 print(list(sqd))
+
+# Using map() with built in functions. 
