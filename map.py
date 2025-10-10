@@ -17,3 +17,9 @@ sqd = map(squared, nums)
 print(list(sqd))
 
 # Using map() with built in functions. 
+
+str_nums = ['1', '2', '3']
+int_nums = list(map(int, str_nums))
+
+
+print(int_nums)
