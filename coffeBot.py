@@ -2,7 +2,7 @@ def coffee_bot():
   print("Welcome to the cafe!")
   size = get_size()
   type = get_drink_type()
-  milk = get_milk_type()
+  milk = order_latte()
   print(size, type, milk)
 
 def print_message():
@@ -36,18 +36,18 @@ def get_drink_type():
     get_drink_type()
   return res
 
-def get_milk_type():
+def order_latte():
   res = input('What kind of milk would you like with that? \n[a] Full Fat \n[b] Semi Skimmed \n[c] Plant Based \n')
   res = res.lower()
   if(res == 'a'):
-    res = 'Full Fat'
+    res = 'Full Fat latte'
   elif(res == 'b'):
-    res = 'Semi Skimmed'
+    res = 'Semi Skimmed Latte'
   elif(res == 'c'):
-    res = 'Plant Based'
+    res = 'Plant Based Latte'
   else:
     print_message()
-    get_milk_type()
+    order_latte()
   return res
 
   
