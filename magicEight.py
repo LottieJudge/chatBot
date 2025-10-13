@@ -1,7 +1,6 @@
 import random
-
-name = "Scotty"
-question = input('Do you have a question for me child? ')
+name = input("Hello, what is your name?")
+question = input(f'Do you have a question for me {name}, my child? ')
 answer = " "
 random_int = random.randint(1,9)
 
