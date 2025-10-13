@@ -7,10 +7,12 @@ def coffee_bot():
     size = 'Medium'
   elif(size == 'c'):
     size = 'Large'
+  else:
+    get_size()
   print(size)
 
 def get_size():
   res = input("What size drink would you like? \n[a] small \n[b] medium \n[c] large \n")
-  return res
+  return res.lower()
 
 coffee_bot()
