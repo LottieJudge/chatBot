@@ -2,8 +2,9 @@ def coffee_bot():
   print("Welcome to the cafe!")
   size = get_size()
   type = get_drink_type()
-  milk = order_latte()
-  print(size, type, milk)
+  print(F"Alright that's a {size} {type}! Coming right up kid")
+  name = input("Woah woah woah bub, got a name? ")
+  print(f"alright, wait over there {name}, your drink will be with you in uno momento, capish?")
 
 def print_message():
   print("I'm sorry, I did not understand your selection. Please enter the corresponding letter for your response.")
@@ -30,7 +31,7 @@ def get_drink_type():
   elif(res == 'b'):
     res = 'Mocha'
   elif(res == 'c'):
-    res = 'Latte'
+    res = order_latte()
   else:
     print_message()
     get_drink_type()
