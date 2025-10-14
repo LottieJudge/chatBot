@@ -23,11 +23,28 @@ def get_size():
     'b': 'medium', 
     'c': 'large'
   }
-  prompt = "What size drink would you like? \n[a] Small \n[b] Medium \n[c] Large \n"
+  prompt = "What size? \n[a] Small \n[b] Medium \n[c] Large \n"
   return user_choice(options, prompt)
 
 def get_drink_type():
   options = {
     'a': 'Brewed Coffee',
-    'b': 
+    'b': 'Mocha',
+    'c': 'Latte'
   }
+  prompt = "and what drink is that gonna be bub? \n[a] Brewed Coffee \n[b] Mocha \n[c] Latte \n"
+  drink_type = user_choice(options, prompt)
+  if drink_type == 'Latte':
+      return order_latte()
+  return drink_type
+
+def order_latte():
+  options = {
+    'a': 'Full Fat Latte',
+    'b': 'Semi Skimmed Latte',
+    'c': 'Plant Based Latte'
+  }
+  prompt = "what kind of milk would you like with hat? \n[a] Full Fat \n[b] Semi Skimmed \n[c] Plant Based \n"
+  return user_choice(options, prompt)
+
+coffee_bot()
