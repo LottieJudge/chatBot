@@ -3,7 +3,8 @@ def user_choice(options, prompt):
     res = input(prompt).lower()
     if res in options:
       return options[res]
-    else print_message()
+    else:
+      print_message()
 
 def coffee_bot():
   print("Welcome to the cafe!")
@@ -16,4 +17,17 @@ def coffee_bot():
 def print_message():
   print("Didn't quite catch that pal, come again?")
 
+def get_size():
+  options = {
+    'a': 'small',
+    'b': 'medium', 
+    'c': 'large'
+  }
+  prompt = "What size drink would you like? \n[a] Small \n[b] Medium \n[c] Large \n"
+  return user_choice(options, prompt)
 
+def get_drink_type():
+  options = {
+    'a': 'Brewed Coffee',
+    'b': 
+  }
